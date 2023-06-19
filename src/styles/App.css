@@ -1,0 +1,107 @@
+body {
+  background-color: red;
+  display: flex;
+  flex-direction:column;
+}
+
+img {
+  width: 10em;
+  margin-top: 0em;
+}
+
+p {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-top: 5em;
+  font-weight: 600;
+}
+
+#title-user,
+#title-user2 {
+  margin-top: 1em;
+
+}
+
+.message, .slogan {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  line-height: 35px;
+}
+
+#input-user {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 25em;
+  height: 2.1em;
+  margin-top: 1em;
+  border: none;
+  border-radius: 3px;
+  text-align: center;
+}
+
+#input-user2 {
+  width: 25em;
+  height: 2.1em;
+  margin-top: 0em;
+  border: none;
+  border-radius: 3px;
+  text-align: center;
+}
+
+#boton-enviar {
+  width: 25em;
+  height: 2.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 3px;
+  border: none;
+  background-color: lightgrey;
+  color: black;
+  cursor: pointer
+}
+
+#boton-enviar:active {
+  background-color: #888;
+  color: white;
+}
+
+
+.slogan-container {
+  margin-top: -70px;
+}
+
+.slogan {
+  text-align: center;
+  margin-top: 90px;
+}
+
+.components-container {
+  place-items: center;
+  display: flex;  
+  flex-direction: row;
+  gap: 7em;
+  margin-top: 6%;
+  text-align: center;
+}
+
+.divisor-line {
+  border-radius: 10px;
+  background-color: white;
+  width: 200px;
+  height: 4px;
+}
+
+.vertical-divisor-line {
+  height: 440px;
+  width: 4px;
+  border-radius: 10px;
+  background-color: white;
+  margin-top: 5.5em;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
