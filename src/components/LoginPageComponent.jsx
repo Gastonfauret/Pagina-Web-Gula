@@ -23,11 +23,15 @@ function LoginPageComponent() {
 
                 <div className="right-container">
                     <p>Ingresar</p>
+                    <form action="">
+                    </form>
                     <input id='input-user' type="email" />
+                    <p className='error-message'>Usuario Incorrecto</p>
                     <p id='title-user'>Usuario</p>
                     <input id='input-user2' type="password" />
+                    <p className='error-message'>Contraseña Incorrecta</p>
                     <p id='title-user2'>Contraseña</p>
-                    <button id='boton-enviar' type='submit'>Ingrese</button>
+                    <button id='boton-enviar' type='submit'>Ingrese</button>                   
                 </div>
             </div>
         </>
