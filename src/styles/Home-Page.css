@@ -86,10 +86,11 @@ img {
 }
 
 .divider-line {
-    width: 92%;
+    width: 88%;
     height: 0.2em;
     border-radius: 15px;
     background-color: red;
+    margin-left: 2em;
 }
 
 .add-client {
