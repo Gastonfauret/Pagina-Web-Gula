@@ -6,8 +6,8 @@ function LoginPageComponent() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
-    const errorMessageUser = validationUser(email);
-    const errorMessagePassword = validationPassword(password);
+    let errorMessageUser = validationUser(email);
+    let errorMessagePassword = validationPassword(password);
 
     return (
         <>
@@ -74,17 +74,17 @@ const login = (email, password) => {
         email === 'correa@gula.com' && password === '12345' ||
         email === 'fauret@gula.com' && password === '12345' ||
         email === 'ramos@gula.com' && password === '12345'
-    ) alert('Login Correcto')
-    else (alert('Contraseña Incorrecta'));
+    ) return alert('Login Correcto');
+    else return alert('Usuario y/o Contraseña Incorrecta');
 };
 
 const validationUser = (email) => {
-    if (!email.includes('@')) return 'Email Incorrecto';
+    if (email.length > 0 && email.length < 9 && !email.includes('@')) return 'Email Incorrecto';
     else ('');
 }
 
 const validationPassword = (password) => {
-    if (password.length < 4) return 'Contraseña Incorrecta';
+    if (password.length > 0 && password.length < 5) return 'Contraseña Incorrecta';    
     else ('');
 }
 
