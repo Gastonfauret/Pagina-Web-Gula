@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/App.css'
 import logo from '../assets/Logo Gula Blanco PNG.png';
 
 function LoginPageComponent() {
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
+    const errorMessageUser = validationUser(email);
+    const errorMessagePassword = validationPassword(password);
+
     return (
         <>
             <div className="components-container">
@@ -23,19 +29,63 @@ function LoginPageComponent() {
 
                 <div className="right-container">
                     <p>Ingresar</p>
-                    <form action="">
+
+                    <form onSubmit={ev => {
+                        ev.preventDefault();
+                        login(email, password);
+                    }}>
+
+                        <input
+                            id='input-user'
+                            name='email'
+                            type="email"
+                            placeholder='usuario@gula.com'
+                            value={email}
+                            onChange={ev => setEmail(ev.target.value)
+                            } />
+
+                        <p className='error-message'>{errorMessageUser}</p>
+                        <p id='title-user'>Usuario</p>
+
+                        <input
+                            id='input-user2'
+                            name='password'
+                            type="password"
+                            placeholder='Contraseña'
+                            value={password}
+                            onChange={ev => setPassword(ev.target.value)
+                            } />
+
+                        <p className='error-message'>{errorMessagePassword}</p>
+                        <p id='title-user'>Contraseña</p>
+                        <button id='boton-enviar' type='submit'>Ingrese</button>
                     </form>
-                    <input id='input-user' type="email" />
-                    <p className='error-message'>Usuario Incorrecto</p>
-                    <p id='title-user'>Usuario</p>
-                    <input id='input-user2' type="password" />
-                    <p className='error-message'>Contraseña Incorrecta</p>
-                    <p id='title-user2'>Contraseña</p>
-                    <button id='boton-enviar' type='submit'>Ingrese</button>                   
+
                 </div>
             </div>
         </>
     )
+}
+
+const login = (email, password) => {
+    if (email === 'aguilar@gula.com' && password === '12345' ||
+        email === 'calo@gula.com' && password === '12345' ||
+        email === 'cardenas@gula.com' && password === '12345' ||
+        email === 'correa@gula.com' && password === '12345' ||
+        email === 'fauret@gula.com' && password === '12345' ||
+        email === 'ramos@gula.com' && password === '12345'
+    ) alert('Login Correcto')
+    else (alert('Contraseña Incorrecta'));
+};
+
+const validationUser = (email) => {
+    if (!email.includes('@')) return 'Email Incorrecto';
+    else ('');
+}
+
+const validationPassword = (password) => {
+    if (password.length < 4) return 'Contraseña Incorrecta';
+    else ('');
 }
 
 export default LoginPageComponent

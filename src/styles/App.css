@@ -4,6 +4,11 @@ body {
   flex-direction:column;
 }
 
+@font-face {
+  font-family: 'Arial-Rounded';
+  src: url('../font/unicode.arialr.ttf');
+}
+
 img {
   width: 10em;
   margin-top: 0em;
@@ -11,26 +16,24 @@ img {
 
 p {
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Arial-Rounded';
   font-size: 20px;
   margin-top: 5em;
   font-weight: 600;
 }
 
-#title-user,
-#title-user2 {
-  margin-top: 1em;
-
+#title-user {
+  margin-top: 2em;
 }
 
 .message, .slogan {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Arial-Rounded';
   font-size: 22px;
   line-height: 35px;
 }
 
 #input-user {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Arial-Rounded';
   width: 25em;
   height: 2.1em;
   margin-top: 1em;
@@ -51,7 +54,7 @@ p {
 #boton-enviar {
   width: 25em;
   height: 2.3em;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Arial-Rounded';
   border-radius: 3px;
   border: none;
   background-color: lightgrey;
@@ -63,7 +66,6 @@ p {
   background-color: #888;
   color: white;
 }
-
 
 .slogan-container {
   margin-top: -70px;
@@ -103,5 +105,16 @@ p {
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+}
+
+.error-message {
+  font-family: 'Arial-Rounded';
+  font-size: 11.8px;
+  color: black;
+  margin-top: 2px;
+  margin-bottom: -20px;
+  text-align: start;
+  letter-spacing: 0.1em;
+  font-weight: light;
 }
 
