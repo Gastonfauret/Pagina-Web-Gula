@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import '../styles/App.css'
+import { useState } from 'react';
 import logo from '../assets/Logo Gula Blanco PNG.png';
+//import '../styles/App.css'
 
-function LoginPageComponent() {
+function Login() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
@@ -74,7 +74,7 @@ const login = (email, password) => {
         email === 'correa@gula.com' && password === '12345' ||
         email === 'fauret@gula.com' && password === '12345' ||
         email === 'ramos@gula.com' && password === '12345'
-    ) return alert('Login Correcto');
+    ) return alert('Login Correcto')
     else return alert('Usuario y/o Contraseña Incorrecta');
 };
 
@@ -88,4 +88,4 @@ const validationPassword = (password) => {
     else ('');
 }
 
-export default LoginPageComponent
+export default Login;

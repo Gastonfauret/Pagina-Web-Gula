@@ -5,6 +5,11 @@ body {
     align-items: center;
 }
 
+@font-face {
+    font-family: 'Arial-Rounded';
+    src: url('../font/unicode.arialr.ttf');
+}
+
 /* Header Component's style */
 
 .header-container {
@@ -20,8 +25,7 @@ body {
 
 img {
     width: 6em;
-    margin-left: 1em;
-    border: 3.1px white solid;
+    margin-left: 1em;    
 }
 
 .user-profile {
@@ -33,15 +37,16 @@ img {
     display: flex;
     align-items: center;
     gap: 0.5em;
-    margin-right: 1em;
+    margin-right: 1em;    
 }
 
 .user {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    font-family: 'Arial-Rounded';
+    font-size: 11px;
     color: white;
     font-weight: 100;
-    font-weight: bold;
+    font-weight: bolder;
+    margin-top: 1em;    
 }
 
 /* "Cliente" and "Proveedores" Component's style */
@@ -49,9 +54,9 @@ img {
 .text-container {
     display: flex;
     justify-content: center;
-    margin-top: 1em;
+    margin-top: 2em;
     gap: 0.5em;
-    margin: 0px;
+    
 }
 
 .text-divider {
@@ -63,10 +68,12 @@ img {
 }
 
 .text {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-family: 'Arial-Rounded';
+    font-size: 17px;
     cursor: pointer;
     font-weight: bold;
+    color: black;
+    margin-top: 14px;
 }
 
 /* "Clientes" and "Proveedores Component's styles */
@@ -96,11 +103,74 @@ img {
 .add-client {
     width: 2.1em;
     height: 2.1em;
-    border-radius: 50%;    
+    border-radius: 50%;
     font-size: 16px;
     color: white;
     background-color: red;
     border: 0px;
     cursor: pointer;
     margin-top: 1em;
+}
+
+.nav-pages {
+    
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Arial-Rounded';
+    color: white;
+    font-weight: 600;
+}
+
+.list-container {
+    margin-top: 1em;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5em;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    width: 25%;
+    height: 35em;
+    border-radius: 1em;
+    font-family: 'Arial-Rounded';
+    gap: 1em;
+}
+
+.btn-contacto {
+    border-radius: 1em;
+    width: 40%;
+    height: 6%;
+    font-family: 'Arial-Rounded';
+    border: 0px;
+    background-color: lightslategray;
+}
+
+.btn-contacto:active {
+    background-color: pink;
+    color: white;
+}
+
+h3 {
+    font-family: 'Arial-Rounded';
+    color: red;
+}
+
+.text-type {
+    color: white;
+    font-size: larger;
 }
