@@ -1,8 +1,8 @@
 body {
     background-color: white;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column;    
+    text-align: center;
 }
 
 @font-face {
@@ -13,7 +13,7 @@ body {
 /* Header Component's style */
 
 .header-container {
-    width: 80em;
+    width: 75em;
     height: 6em;
     background-color: red;
     border-radius: 3px;
@@ -21,6 +21,8 @@ body {
     position: relative;
     align-items: center;
     justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 img {
@@ -174,3 +176,24 @@ h3 {
     color: white;
     font-size: larger;
 }
+
+.branch {
+    font-family: 'Arial-Rounded';
+    font-size: 3em;
+    color: red;
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+}
+
+.branch-text {
+    font-family: 'Arial-Rounded';
+    font-size: 1.3em;
+    line-height: 2em;    
+}
+
+.red-logo {
+    width: 10em;
+    margin-top: 1em;
+}
+
