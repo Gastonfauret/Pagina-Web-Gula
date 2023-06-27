@@ -1,8 +1,7 @@
 body {
     background-color: white;
     display: flex;
-    flex-direction: column;    
-    text-align: center;
+    flex-direction: column;
 }
 
 @font-face {
@@ -27,7 +26,7 @@ body {
 
 img {
     width: 6em;
-    margin-left: 1em;    
+    margin-left: 1em;
 }
 
 .user-profile {
@@ -39,7 +38,7 @@ img {
     display: flex;
     align-items: center;
     gap: 0.5em;
-    margin-right: 1em;    
+    margin-right: 1em;
 }
 
 .user {
@@ -48,7 +47,7 @@ img {
     color: white;
     font-weight: 100;
     font-weight: bolder;
-    margin-top: 1em;    
+    margin-top: 1em;
 }
 
 /* "Cliente" and "Proveedores" Component's style */
@@ -58,7 +57,7 @@ img {
     justify-content: center;
     margin-top: 2em;
     gap: 0.5em;
-    
+
 }
 
 .text-divider {
@@ -115,7 +114,6 @@ img {
 }
 
 .nav-pages {
-    
     display: flex;
     justify-content: center;
     gap: 60px;
@@ -189,7 +187,7 @@ h3 {
 .branch-text {
     font-family: 'Arial-Rounded';
     font-size: 1.3em;
-    line-height: 2em;    
+    line-height: 2em;
 }
 
 .red-logo {
@@ -197,3 +195,47 @@ h3 {
     margin-top: 1em;
 }
 
+.first {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 74em;
+    height: 20em;
+    border: solid red 2px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    margin-top: 1.5em;
+}
+
+.flyers {
+    font-size: 22px;
+}
+
+.flyers-container {
+    display: flex;
+    margin-top: 1.5em;
+    justify-content: center;
+    gap: 2.5%;
+    
+
+}
+
+.another-flyers {
+    display: flex;
+    width: 30%;
+    height: 15em;
+    border: solid red 2px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer {
+    width: 75em;
+    height: 6em;
+    background-color: red;
+    border-radius: 3px;
+    margin-top: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+}
