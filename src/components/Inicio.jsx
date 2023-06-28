@@ -1,13 +1,15 @@
 import Header from "./Header";
 import '../styles/Home-Page.css'
 import Footer from "./Footer";
+import arg from "../assets/ARG.jpg"
 
 function Inicio() {
     return (
         <>
             <Header />
             <div className="first">
-                <p className="flyers">Inserte flyer nro. 1 Aqui</p>
+            <img className="img-ARG" src={arg} alt="Logo Gula" />
+                {/* <p className="flyers">Inserte flyer nro. 1 Aqui</p> */}
             </div>
             <div className="flyers-container">
                 <div className="flyers another-flyers">

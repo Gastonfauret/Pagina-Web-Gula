@@ -2,6 +2,7 @@ import Header from "./Header";
 import '../styles/Home-Page.css'
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import Footer from "./Footer";
 
 function Contacto() {
     const form = useRef();
@@ -33,6 +34,7 @@ function Contacto() {
                     <button className="btn-contacto" type="submit" value="Send">Enviar</button>
                 </form>
             </div>
+            <Footer/>
         </>
     )
 }

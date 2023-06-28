@@ -7,8 +7,6 @@ import Inicio from './Inicio';
 import Login from './Login';
 import Listados from './Listados';
 
-import '../styles/Home-Page.css'
-
 function App() {
   return (
     <>
@@ -17,10 +15,8 @@ function App() {
         <Route exact path='/listados' element={<Listados />}/>
         <Route exact path='/nosotros' element={<Nosotros/>}/>
         <Route exact path='/contacto' element={<Contacto/>}/>
-        <Route exact path='/salir' element={<Login/>}/>
-        
+        <Route exact path='/salir' element={<Login/>}/>        
       </Routes>
-
     </>
   )
 }

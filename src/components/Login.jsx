@@ -13,13 +13,13 @@ function Login() {
         <>
             <div className="components-container">
                 <div className="left-container">
-                    <p className='message'>Bienvenido/a!<br />
+                    <p className='login-page-text'>Bienvenido/a!<br />
                         a la primera App<br />
                         de pedidos de<br />
                         Benito Juárez</p>
                     <div className="divisor-line"></div>
                     <div className="slogan-container">
-                        <p className="slogan">Tenes Hambre?<br />
+                        <p className="login-page-text">Tenes Hambre?<br />
                             tenes</p>
                         <img src={logo} alt="" />
                     </div>
@@ -28,7 +28,7 @@ function Login() {
                 <div className="vertical-divisor-line"></div>
 
                 <div className="right-container">
-                    <p>Ingresar</p>
+                    <p className="login-page-text">Ingresar</p>
 
                     <form onSubmit={ev => {
                         ev.preventDefault();
@@ -45,7 +45,7 @@ function Login() {
                             } />
 
                         <p className='error-message'>{errorMessageUser}</p>
-                        <p id='title-user'>Usuario</p>
+                        <p className="login-text">Usuario</p>
 
                         <input
                             id='input-user2'
@@ -57,7 +57,7 @@ function Login() {
                             } />
 
                         <p className='error-message'>{errorMessagePassword}</p>
-                        <p id='title-user'>Contraseña</p>
+                        <p className="login-text">Contraseña</p>
                         <button id='boton-enviar' type='submit'>Ingrese</button>
                     </form>
 
@@ -84,7 +84,7 @@ const validationUser = (email) => {
 }
 
 const validationPassword = (password) => {
-    if (password.length > 0 && password.length < 5) return 'Contraseña Incorrecta';    
+    if (password.length > 0 && password.length < 5) return 'Contraseña Incorrecta';
     else ('');
 }
 
