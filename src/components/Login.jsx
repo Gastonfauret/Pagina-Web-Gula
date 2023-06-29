@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import logo from '../assets/Logo Gula Blanco PNG.png';
-//import '../styles/App.css'
+import '../styles/App.css'
+import { Link } from "react-router-dom";
 
 function Login() {
     const [email, setEmail] = useState('');
@@ -9,8 +10,10 @@ function Login() {
     let errorMessageUser = validationUser(email);
     let errorMessagePassword = validationPassword(password);
 
+    document.body.style = 'background-color: red'; 
+
     return (
-        <>
+        <>                
             <div className="components-container">
                 <div className="left-container">
                     <p className='login-page-text'>Bienvenido/a!<br />
@@ -30,11 +33,11 @@ function Login() {
                 <div className="right-container">
                     <p className="login-page-text">Ingresar</p>
 
-                    <form onSubmit={ev => {
+                    <form onSubmit={(ev) => {
                         ev.preventDefault();
                         login(email, password);
+                        //<Link to={'/'}></Link>
                     }}>
-
                         <input
                             id='input-user'
                             name='email'
@@ -74,7 +77,7 @@ const login = (email, password) => {
         email === 'correa@gula.com' && password === '12345' ||
         email === 'fauret@gula.com' && password === '12345' ||
         email === 'ramos@gula.com' && password === '12345'
-    ) return alert('Login Correcto')
+    ) return alert ('Login Correcto');
     else return alert('Usuario y/o Contraseña Incorrecta');
 };
 

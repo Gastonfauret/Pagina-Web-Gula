@@ -1,7 +1,7 @@
 import logo from '../assets/Logo Gula Blanco PNG.png';
 import profile from '../assets/User-Milagros.png'
 import {Link} from 'react-router-dom';
-import '../styles/Home-Page.css'
+import '../styles/App.css'
 
 function Header() {
     return (

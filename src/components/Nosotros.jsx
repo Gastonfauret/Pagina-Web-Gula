@@ -1,5 +1,5 @@
 import Header from "./Header";
-import '../styles/Home-Page.css'
+import '../styles/App.css'
 import logoRojo from '../assets/Logo Gula Rojo.png';
 import Footer from '../components/Footer'
 

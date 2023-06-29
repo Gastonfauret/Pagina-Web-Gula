@@ -1,4 +1,4 @@
-import '../styles/Home-Page.css'
+import '../styles/App.css'
 import instagram from '../assets/icons/icons8-instagram.svg'
 import facebook from '../assets/icons/icons8-facebook.svg'
 import tiktok from '../assets/icons/icons8-tik-tok.svg'

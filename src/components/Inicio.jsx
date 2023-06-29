@@ -1,5 +1,5 @@
 import Header from "./Header";
-//import '../styles/Home-Page.css'
+import '../styles/App.css'
 import Footer from "./Footer";
 import promoArg from '../assets/Promo Arg.jpg'
 import promoDulzura from '../assets/Promo Dulzura.jpg'

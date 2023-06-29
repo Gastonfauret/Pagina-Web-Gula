@@ -1,8 +1,7 @@
 import React from "react";
 import Header from "./Header";
-import '../styles/Home-Page.css'
+import '../styles/App.css'
 import Footer from "./Footer";
-
 
 function Listados() {
     return (
