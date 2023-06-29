@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import logo from '../assets/Logo Gula Blanco PNG.png';
-import '../styles/App.css'
+//import '../styles/App.css'
 
 function Login() {
     const [email, setEmail] = useState('');

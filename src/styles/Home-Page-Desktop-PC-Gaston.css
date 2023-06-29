@@ -135,8 +135,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 3.5em;
-    margin-bottom: 3.5em;
+    margin-top: 1.5em;
 }
 
 .contactForm {
@@ -180,6 +179,8 @@ h3 {
     font-family: 'Arial-Rounded';
     font-size: 3em;
     color: red;
+    margin-top: 1em;
+    margin-bottom: 1em;
 
 }
 
@@ -187,8 +188,6 @@ h3 {
     font-family: 'Arial-Rounded';
     font-size: 1.3em;
     line-height: 2em;
-    text-align: center;
-    margin-top: 0em;
 }
 
 .red-logo {
@@ -197,7 +196,9 @@ h3 {
 }
 
 .first {
-    display: flex;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 74em;
     height: 20em;
     border: solid red 2px;
@@ -215,17 +216,16 @@ h3 {
     display: flex;
     margin-top: 1.5em;
     justify-content: center;
-    gap: 6vh;
+    gap: 2.5%;
 }
 
 .another-flyers {
     display: flex;
-    width: 25.6em;
+    width: 25.7em;
     height: 15em;
     border: solid red 2px;
     justify-content: space-around;
     align-items: center;
-    border-radius: 5px;
 }
 
 .footer {
@@ -236,31 +236,4 @@ h3 {
     margin-top: 1.5em;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
 }
-
-.social {
-    width: 2em;
-    margin-top: 2.1em;
-    cursor: pointer;
-}
-
-.social:hover {
-    background-color: white;
-    border-radius: 10px;
-}
-
-
-.aboutus-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.promo {    
-    width: 100%;
-    border-radius: 0.2em;    
-    margin-left: auto;
-    margin-right: auto;
-}
-

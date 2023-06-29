@@ -1,22 +1,23 @@
 import Header from "./Header";
-import '../styles/Home-Page.css'
+//import '../styles/Home-Page.css'
 import Footer from "./Footer";
-import arg from "../assets/ARG.jpg"
+import promoArg from '../assets/Promo Arg.jpg'
+import promoDulzura from '../assets/Promo Dulzura.jpg'
+import promoDelivery from '../assets/Promo Delivery.jpg'
 
 function Inicio() {
     return (
         <>
             <Header />
             <div className="first">
-            <img className="img-ARG" src={arg} alt="Logo Gula" />
-                {/* <p className="flyers">Inserte flyer nro. 1 Aqui</p> */}
+                <img className="promo" src={promoArg} alt="Promo Argentina" />
             </div>
             <div className="flyers-container">
                 <div className="flyers another-flyers">
-                    <p className="flyers">Inserte flyer nro. 2 Aqui</p>
+                    <img className="promo" src={promoDulzura} alt="Logo Dia de la Dulzura" />
                 </div>
                 <div className="flyers another-flyers">
-                    <p className="flyers">Inserte flyer nro. 3 Aqui</p>
+                    <img className="promo" src={promoDelivery} alt="Promo Delivery" />
                 </div>
             </div>
             <Footer />
