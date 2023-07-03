@@ -1,42 +1,32 @@
-import { useState } from 'react';
-import logo from '../assets/Logo Gula Blanco PNG.png';
-import '../styles/App.css'
-import { Link } from "react-router-dom";
+import { useState } from "react";
+
+import Slogan from './Slogan';
+import VerticalDivider from './VerticalDivider';
+
+import '../styles/App.css';
+
+
 
 function Login() {
+    document.body.style = 'background-color: red';
+
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
     let errorMessageUser = validationUser(email);
     let errorMessagePassword = validationPassword(password);
 
-    document.body.style = 'background-color: red'; 
-
     return (
-        <>                
+        <>
             <div className="components-container">
-                <div className="left-container">
-                    <p className='login-page-text'>Bienvenido/a!<br />
-                        a la primera App<br />
-                        de pedidos de<br />
-                        Benito Juárez</p>
-                    <div className="divisor-line"></div>
-                    <div className="slogan-container">
-                        <p className="login-page-text">Tenes Hambre?<br />
-                            tenes</p>
-                        <img src={logo} alt="" />
-                    </div>
-                </div>
-
-                <div className="vertical-divisor-line"></div>
-
+                <Slogan />
+                <VerticalDivider />
                 <div className="right-container">
                     <p className="login-page-text">Ingresar</p>
 
                     <form onSubmit={(ev) => {
                         ev.preventDefault();
                         login(email, password);
-                        //<Link to={'/'}></Link>
                     }}>
                         <input
                             id='input-user'
@@ -46,7 +36,6 @@ function Login() {
                             value={email}
                             onChange={ev => setEmail(ev.target.value)
                             } />
-
                         <p className='error-message'>{errorMessageUser}</p>
                         <p className="login-text">Usuario</p>
 
@@ -63,23 +52,24 @@ function Login() {
                         <p className="login-text">Contraseña</p>
                         <button id='boton-enviar' type='submit'>Ingrese</button>
                     </form>
-
                 </div>
             </div>
         </>
     )
 }
 
-const login = (email, password) => {
+
+
+const login = (email, password) => {    
     if (email === 'aguilar@gula.com' && password === '12345' ||
         email === 'calo@gula.com' && password === '12345' ||
         email === 'cardenas@gula.com' && password === '12345' ||
         email === 'correa@gula.com' && password === '12345' ||
         email === 'fauret@gula.com' && password === '12345' ||
         email === 'ramos@gula.com' && password === '12345'
-    ) return alert ('Login Correcto');
-    else return alert('Usuario y/o Contraseña Incorrecta');
-};
+    ) return (alert('Login Correcto'), window.location.href = '/inicio');
+    else alert('Usuario y/o Contraseña Incorrecta');
+}
 
 const validationUser = (email) => {
     if (email.length > 0 && email.length < 9 && !email.includes('@')) return 'Email Incorrecto';
@@ -90,5 +80,7 @@ const validationPassword = (password) => {
     if (password.length > 0 && password.length < 5) return 'Contraseña Incorrecta';
     else ('');
 }
+
+//<Link to={'/inicio'}></Link>
 
 export default Login;

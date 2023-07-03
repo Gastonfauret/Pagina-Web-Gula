@@ -10,11 +10,11 @@ function Header() {
                 <img src={logo} alt="Logo Gula" />
 
                 <ul className='nav-pages'>
-                    <li><Link to='/'>Inicio</Link></li>
+                    <li><Link to='/inicio'>Inicio</Link></li>
                     <li><Link to='/listados'>Listados</Link></li>
                     <li><Link to='/nosotros'>Nosotros</Link></li>
                     <li><Link to='/contacto'>Contacto</Link></li>
-                    <li><Link to='/salir'>Salir</Link></li>
+                    <li><Link to='/'>Salir</Link></li>
                 </ul>
                 
                 <div className="user-container">
