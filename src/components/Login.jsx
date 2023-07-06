@@ -3,18 +3,16 @@ import { useState } from "react";
 import Slogan from './Slogan';
 import VerticalDivider from './VerticalDivider';
 
-import '../styles/App.css';
-
-
+import '../styles/Login.css';
 
 function Login() {
-    document.body.style = 'background-color: red';
-
+    document.body.style = 'background-color: red';   
+    
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
     let errorMessageUser = validationUser(email);
-    let errorMessagePassword = validationPassword(password);
+    let errorMessagePassword = validationPassword(password);    
 
     return (
         <>
@@ -58,15 +56,13 @@ function Login() {
     )
 }
 
-
-
-const login = (email, password) => {    
-    if (email === 'aguilar@gula.com' && password === '12345' ||
-        email === 'calo@gula.com' && password === '12345' ||
-        email === 'cardenas@gula.com' && password === '12345' ||
-        email === 'correa@gula.com' && password === '12345' ||
-        email === 'fauret@gula.com' && password === '12345' ||
-        email === 'ramos@gula.com' && password === '12345'
+const login = (email, password) => {
+    if (email === 'aguilar@gula.com' && password === 'milagros123' ||
+        email === 'calo@gula.com' && password === 'adrian123' ||
+        email === 'cardenas@gula.com' && password === 'tomas123' ||
+        email === 'correa@gula.com' && password === 'alejandro123' ||
+        email === 'fauret@gula.com' && password === 'gaston123' ||
+        email === 'ramos@gula.com' && password === 'marcelo123'
     ) return (alert('Login Correcto'), window.location.href = '/inicio');
     else alert('Usuario y/o Contraseña Incorrecta');
 }
@@ -80,7 +76,5 @@ const validationPassword = (password) => {
     if (password.length > 0 && password.length < 5) return 'Contraseña Incorrecta';
     else ('');
 }
-
-//<Link to={'/inicio'}></Link>
 
 export default Login;

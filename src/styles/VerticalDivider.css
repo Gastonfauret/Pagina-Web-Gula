@@ -1,0 +1,14 @@
+.divisor-line {
+    border-radius: 10px;
+    background-color: white;
+    width: 200px;
+    height: 4px;
+  }
+  
+  .vertical-divisor-line {
+    height: 440px;
+    width: 4px;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 5.5em;
+  }

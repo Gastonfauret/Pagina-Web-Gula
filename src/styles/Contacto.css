@@ -1,0 +1,56 @@
+body {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+@font-face {
+    font-family: 'Arial-Rounded';
+    src: url('../font/unicode.arialr.ttf');
+}
+
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3.5em;
+    margin-bottom: 3.5em;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    width: 25%;
+    height: 35em;
+    border-radius: 1em;
+    font-family: 'Arial-Rounded';
+    gap: 1em;
+}
+
+.btn-contacto {
+    border-radius: 1em;
+    width: 40%;
+    height: 6%;
+    font-family: 'Arial-Rounded';
+    border: 0px;
+    background-color: lightgrey;
+}
+
+.btn-contacto:active {
+    background-color: #888;
+    color: white;
+}
+
+h3 {
+    font-family: 'Arial-Rounded';
+    color: red;
+}
+
+.text-type {
+    color: white;
+    font-size: larger;
+}

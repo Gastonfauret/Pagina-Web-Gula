@@ -1,5 +1,5 @@
 import logo from '../assets/Logo Gula Blanco PNG.png';
-import '../styles/App.css';
+import '../styles/Slogan.css';
 
 function Slogan() {
 

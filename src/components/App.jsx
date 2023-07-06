@@ -6,7 +6,6 @@ import Inicio from './Inicio';
 import Login from './Login';
 import Listados from './Listados';
 
-
 function App() {
   return (
     <>

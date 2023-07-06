@@ -1,4 +1,4 @@
-import '../styles/App.css'
+import '../styles/VerticalDivider.css'
 
 function VerticalDivider () {
     return (

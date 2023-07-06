@@ -1,5 +1,5 @@
 import Header from "./Header";
-import '../styles/App.css'
+import '../styles/Contacto.css'
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import Footer from "./Footer";
