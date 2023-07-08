@@ -1,0 +1,13 @@
+.add-button {
+    color: var(--gula-red);
+    width: 35px;
+    height: 35px;
+    margin-top: 17px;
+    margin-left: -213px;
+    cursor: pointer;
+    transition: transform 1s;
+}
+
+.add-button:hover {
+    transform: rotate(180deg);
+}

@@ -1,12 +1,11 @@
 import React from "react";
-import Header from "./Header";
-import Footer from "./Footer";
+import Clientes from "./Clientes";
+import '../styles/data-clients.css'
 
 function Listados() {
     return (
         <>
-            <Header />
-            <Footer />
+            <Clientes />
         </>
     )
 }
