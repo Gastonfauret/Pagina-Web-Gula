@@ -1,20 +1,22 @@
-import React from 'react';
-//import '../styles/App.css'
-//import LoginPageComponent from './LoginPageComponent';
-import HomePage from './Home-Page';
-import '../styles/Home-Page.css'
+import { Routes, Route } from 'react-router-dom';
 
+import Nosotros from './Nosotros';
+import Contacto from './Contacto';
+import Inicio from './Inicio';
+import Login from './Login';
+import Listados from './Listados';
 
 function App() {
   return (
     <>
-      {/* <div className="components-container">
-        <LoginPageComponent/>
-      </div> */}
-      <div className="components-container">
-        <HomePage />
-      </div>
-
+      <Routes>        
+          <Route exact path='/' element={<Login />} />
+          <Route exact path='/inicio' element={<Inicio />} />
+          <Route exact path='/listados' element={<Listados />} />
+          <Route exact path='/nosotros' element={<Nosotros />} />
+          <Route exact path='/contacto' element={<Contacto />} />
+          <Route exact path='/' element={<Login />} />        
+      </Routes>
     </>
   )
 }

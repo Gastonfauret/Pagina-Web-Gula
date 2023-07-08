@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Arial-Rounded';
+    src: url('../font/unicode.arialr.ttf');
+}
+
+.header-container {
+    width: 75em;
+    height: 6em;
+    background-color: red;
+    border-radius: 3px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-container img {
+    width: 6.5em;
+    margin-left: 1em;
+    cursor: pointer;
+}
+
+.header-container .user-profile {
+    border-radius: 50%;
+    width: 3.6em;
+    cursor: pointer;
+}
+
+.user-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    margin-right: 1em;
+}
+
+.user {
+    font-family: 'Arial-Rounded';
+    font-size: 11px;
+    color: white;
+    font-weight: 100;
+    font-weight: bolder;
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+.nav-pages {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Arial-Rounded';
+    color: white;
+    font-weight: 600;
+}

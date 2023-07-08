@@ -1,0 +1,26 @@
+img {
+    width: 10em;
+    margin-top: 0em;
+}
+
+@font-face {
+    font-family: 'Arial-Rounded';
+    src: url('../font/unicode.arialr.ttf');
+}
+
+
+.message,
+.slogan {
+    font-family: 'Arial-Rounded';
+    font-size: 22px;
+    line-height: 35px;
+}
+
+.slogan-container {
+    margin-top: -70px;
+}
+
+.slogan {
+    text-align: center;
+    margin-top: 90px;
+}

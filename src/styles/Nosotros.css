@@ -1,0 +1,30 @@
+body {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;    
+}
+
+@font-face {
+    font-family: 'Arial-Rounded';
+    src: url('../font/unicode.arialr.ttf');
+}
+
+.branch {
+    font-family: 'Arial-Rounded';
+    font-size: 3em;
+    color: red;
+}
+
+.branch-text {
+    font-family: 'Arial-Rounded';
+    font-size: 1.3em;
+    line-height: 2em;
+    text-align: center;
+    margin-top: 0em;
+}
+
+.red-logo {
+    width: 10em;
+    margin-top: 1em;
+}
