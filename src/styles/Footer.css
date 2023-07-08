@@ -7,6 +7,8 @@
     border-radius: 3px;
     height: 10em;
     margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;    
 }
 
 .footer-container ul {
@@ -17,6 +19,7 @@
     align-items: center;
     justify-content: space-between;
     margin-top: 40px;
+    
 }
 
 .footer-container ul li {
