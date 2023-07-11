@@ -5,6 +5,7 @@
 
 .data-prov-container {
     width: 90em;
+    height: 30em;
     display: flex;
     flex-direction: column;
     align-items: center;
