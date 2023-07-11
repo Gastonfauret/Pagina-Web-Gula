@@ -17,3 +17,7 @@
  ::-webkit-scrollbar-thumb:hover {
    background: #555; 
  }
+
+ :root {
+  --gula-red: rgb(237 28 36);
+}

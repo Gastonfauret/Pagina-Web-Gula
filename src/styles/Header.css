@@ -4,9 +4,9 @@
 }
 
 .header-container {
-    width: 75em;
+    width: 90em;
     height: 6em;
-    background-color: red;
+    background-color: var(--gula-red);
     border-radius: 3px;
     display: flex;
     position: relative;
@@ -14,11 +14,12 @@
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
+    margin-top: -50px;
 }
 
 .header-container img {
     width: 6.5em;
-    margin-left: 1em;
+    margin-left: 2.5em;
     cursor: pointer;
 }
 
@@ -37,9 +38,8 @@
 
 .user {
     font-family: 'Arial-Rounded';
-    font-size: 11px;
+    font-size: 15px;
     color: white;
-    font-weight: 100;
     font-weight: bolder;
     margin-top: 1em;
     cursor: pointer;

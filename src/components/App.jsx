@@ -8,6 +8,7 @@ import Listados from './Listados';
 import Clientes from "./Clientes";
 import Providers from "./Providers";
 import SwitchProvider from "./SwitchProvider";
+import "../styles/main.css"
 
 function App() {
   return (

@@ -6,7 +6,7 @@ import VerticalDivider from './VerticalDivider';
 import '../styles/Login.css';
 
 function Login() {
-    document.body.style = 'background-color: red';   
+    document.body.style = 'background-color: var(--gula-red)';   
     
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');

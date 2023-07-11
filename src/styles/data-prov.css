@@ -18,7 +18,7 @@
 }
 
 .data-prov-container thead tr th {
-    color: red;
+    color: var(--gula-red);
     border-bottom: 3px solid rgba(237, 28, 35, 0.166);
     padding-bottom: 3.5px;
     font-size: 1.15rem;
@@ -87,10 +87,10 @@
 }
 
 .add-button {
-    color: red;
+    color: var(--gula-red);
 }
 
 .user-icons {
-    color: red;
+    color: var(--gula-red);
 }
 

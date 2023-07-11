@@ -70,8 +70,18 @@ body {
     display: flex;
     flex-direction: row;
     gap: 7em;
-    margin-top: 6%;
+    margin-top: -30px;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .error-message {

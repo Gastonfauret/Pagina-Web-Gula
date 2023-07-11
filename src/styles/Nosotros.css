@@ -13,7 +13,7 @@ body {
 .branch {
     font-family: 'Arial-Rounded';
     font-size: 3em;
-    color: red;
+    color: var(--gula-red);
 }
 
 .branch-text {

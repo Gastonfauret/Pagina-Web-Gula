@@ -13,7 +13,7 @@
 }
 
 .data-clients-container thead tr th {
-    color: red;
+    color: var(--gula-red);
     border-bottom: 3px solid rgba(237, 28, 35, 0.166);
     padding-bottom: 3.5px;
     font-size: 1.15rem;
@@ -28,7 +28,6 @@
 }
 
 .data-clients-container tbody{
-    /* height: 50vh; */
     gap: 10px;
     display: flex;
     flex-direction: column;
@@ -65,7 +64,8 @@
 
 .data-clients-container thead tr th:nth-child(4),
 .data-clients-container tbody tr td:nth-child(4) {
-    padding-left: 30px;
+    padding-left: 10px;
+    width: 100px;
 }
 
 .data-clients-container thead tr th:nth-child(5),
@@ -149,7 +149,7 @@
 
 .modal-button__container input {
     height: 80%;
-    background-color: red;
+    background-color: var(--gula-red);
     border: none;
     color: white;
     font-size: 1.1rem;

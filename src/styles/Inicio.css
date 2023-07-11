@@ -11,13 +11,15 @@ body {
 
 .first {
     display: flex;
-    width: 74em;
+    width: 73em;
     height: 20em;
-    border: solid red 2px;
+    border: none;
     margin-left: auto;
     margin-right: auto;
     border-radius: 5px;
     margin-top: 1.5em;
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.213);
+    padding: 2px;
 }
 
 .flyers {
@@ -35,15 +37,17 @@ body {
     display: flex;
     width: 25.6em;
     height: 15em;
-    border: solid red 2px;
+    border: none;
     justify-content: space-around;
     align-items: center;
     border-radius: 5px;
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.213);
+    padding: 2px;
 }
 
 .promo {
     width: 100%;
-    border-radius: 0.2em;
+    border-radius: 5px;
     margin-left: auto;
     margin-right: auto;
 }
