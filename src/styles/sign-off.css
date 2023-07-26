@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Arial-Rounded';
+    src: url('../font/unicode.arialr.ttf');
+}
+
 .sign-off-container {
     margin-top: 40px;
     width: 90em;
@@ -15,4 +20,8 @@
     color: white;
     background: var(--gula-red);
     cursor: pointer;
+}
+
+.texto-boton {
+    font-family: 'Arial-Rounded'
 }

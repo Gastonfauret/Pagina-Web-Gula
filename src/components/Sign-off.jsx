@@ -5,7 +5,7 @@ function SignOff() {
     return(
         <div className="sign-off-container">
         <div className="sign-off-button">
-            <p>Cerrar sesion</p>
+            <p className="texto-boton">Cerrar sesion</p>
         </div>
     </div>
         )
