@@ -11,7 +11,7 @@ function Header() {
 
                 <ul className='nav-pages'>
                     <li><Link to='/inicio'>Inicio</Link></li>
-                    <li><Link to='/listados'>Listados</Link></li>
+                    <li><Link to='/clientes'>Listados</Link></li>
                     <li><Link to='/nosotros'>Nosotros</Link></li>
                     <li><Link to='/contacto'>Contacto</Link></li>
                     <li><Link to='/'>Salir</Link></li>

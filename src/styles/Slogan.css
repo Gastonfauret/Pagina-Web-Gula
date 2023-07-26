@@ -1,6 +1,5 @@
 img {
     width: 10em;
-    margin-top: 0em;
 }
 
 @font-face {
@@ -14,10 +13,6 @@ img {
     font-family: 'Arial-Rounded';
     font-size: 22px;
     line-height: 35px;
-}
-
-.slogan-container {
-    margin-top: -70px;
 }
 
 .slogan {

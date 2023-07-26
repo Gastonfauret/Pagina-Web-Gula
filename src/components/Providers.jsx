@@ -8,13 +8,13 @@ import DataProv from "./Data-prov";
 function Providers() {
   return (
     <>
-    <Header />
-    <Switch />
-    <DataProv />
+      <Header />
+      <Switch />
+      <DataProv />
       <SignOff />
       <Footer />
     </>
-  )
+  );
 }
 
 export default Providers;

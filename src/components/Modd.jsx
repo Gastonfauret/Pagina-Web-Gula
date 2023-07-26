@@ -2,7 +2,7 @@ import React from "react";
 import { Dialog } from "@mui/material";
 import { useState } from "react";
 import { AiFillPlusCircle } from "react-icons/ai";
-import ClientsForm from "./clients-form";
+import ClientsForm from "./Clients-form";
 import { useSwitchContext } from "./SwitchProvider";
 import ProvForm from "./Prov-form";
 import "../styles/modd.css";

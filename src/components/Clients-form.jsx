@@ -2,7 +2,10 @@ import React from "react";
 import { useState } from "react";
 import { useHandleReloadContext } from "./SwitchProvider";
 
+//Este componente es exclusivamente destinado al boton "Agregar nuevo usuario", donde se abre un modal con inputs vacios.
+
 function ClientsForm() {
+  //Creamos una variable de estado inicializada con las claves necesarias, sus valores son strings vacios
   const [customer, setCustomer] = useState({
     lastName: "",
     name: "",
@@ -12,12 +15,15 @@ function ClientsForm() {
     phone: "",
   });
 
+  //Funcion de re-renderizado (setter)
   const handleReload = useHandleReloadContext();
 
+  //Metodo para el modal de Agregar nuevo cliente / proveedor, los valores del input ingresados por el usuario modifican los datos de currentUser(en principio vacio)
   const handleChanges = (e) => {
     setCustomer((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
+  //Metodo Crud para agregar nuevos datos a la API
   const handleSubmit = (e) => {
     e.preventDefault();
     fetch("https://649115f02f2c7ee6c2c7b868.mockapi.io/clients", {
@@ -35,6 +41,7 @@ function ClientsForm() {
 
   return (
     <>
+    {/* Este formulario, via submit, acciona la funcion handleSubmit y es la encargada de cargar nuevos datos a la API  */}
       <form action="" onSubmit={handleSubmit}>
         <label htmlFor="lastName">Apellido </label>
         <input
