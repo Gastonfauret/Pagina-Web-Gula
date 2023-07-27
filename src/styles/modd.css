@@ -3,9 +3,11 @@
     width: 35px;
     height: 35px;
     margin-top: 17px;
-    margin-left: -213px;
     cursor: pointer;
     transition: transform 1s;
+    position: absolute;
+    right: 95px;
+    top: 155px;
 }
 
 .add-button:hover {

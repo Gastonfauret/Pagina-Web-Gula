@@ -1,10 +1,5 @@
-@font-face {
-    font-family: 'Arial-Rounded';
-    src: url('../font/unicode.arialr.ttf');
-}
-
 .data-prov-container {
-    width: 90em;
+    width: 100vw;
     height: 30em;
     display: flex;
     flex-direction: column;
@@ -15,7 +10,7 @@
 
 .data-prov-container thead,
 .data-prov-container tbody {
-    width: 70em;    
+    width: 85vw;    
 }
 
 .data-prov-container thead tr th {
@@ -37,7 +32,7 @@
 .data-prov-container thead tr,
 .data-prov-container tbody tr {
     display: flex;
-
+    
 }
 
 .data-prov-container thead tr th,
@@ -81,10 +76,6 @@
 
 .data-prov-container tbody tr td:nth-child(8) {
     margin-left: 53px;
-}
-
-.add-button-container {
-    display: flex;    
 }
 
 .add-button {

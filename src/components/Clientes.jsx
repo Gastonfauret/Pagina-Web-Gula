@@ -8,13 +8,13 @@ import Footer from "./Footer";
 function Clientes() {
   return (
     <>
-    <Header />     
+      <Header />
       <Switch />
-        <DataClients />
-        <SignOff />  
-        <Footer/>      
+      <DataClients />
+      <SignOff />
+      <Footer />
     </>
-  )
+  );
 }
 
 export default Clientes;

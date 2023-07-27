@@ -1,10 +1,5 @@
-@font-face {
-    font-family: 'Arial-Rounded';
-    src: url('../font/unicode.arialr.ttf');
-}
-
 .header-container {
-    width: 90em;
+    width: 98vw;
     height: 6em;
     background-color: var(--gula-red);
     border-radius: 3px;
@@ -17,7 +12,7 @@
 }
 
 .header-container img {
-    width: 6.5em;
+    width: 5.5em;
     margin-left: 2.5em;
     cursor: pointer;
 }
@@ -31,23 +26,25 @@
 .user-container {
     display: flex;
     align-items: center;
-    gap: 0.5em;
     margin-right: 1em;
+    border-left: 2px solid rgba(255, 255, 255, 0.514);
+    padding-left: 18px;
+    height: 75%;
 }
 
 .user {
     font-family: 'Arial-Rounded';
-    font-size: 15px;
+    font-size: 0.8rem;
     color: white;
     font-weight: bolder;
-    margin-top: 1em;
     cursor: pointer;
+    margin-right: -20px;
 }
 
 .nav-pages {
     display: flex;
     justify-content: center;
-    gap: 60px;
+    gap: 50px;
     list-style: none;
 }
 
@@ -55,6 +52,7 @@ a {
     text-decoration: none;
     font-family: 'Arial-Rounded';
     color: white;
+    font-size: 0.79rem;
     font-weight: 600;
     padding-bottom: 5px;
 }

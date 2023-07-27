@@ -1,25 +1,25 @@
 .footer-container {
-    width: 75em;
+    width: 98vw;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     flex-direction: column;
     border-radius: 3px;
     height: 10em;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;    
+    margin-bottom: 20px; 
+    margin-top: 20px;
+    background-color: rgba(128, 128, 128, 0.206);
+    border-top: 1px solid rgba(128, 128, 128, 0.393);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.393);
 }
 
 .footer-container ul {
     list-style: none;
     display: flex;
-    width: 15em;
+    width: 10.5em;
     height: 2em;
     align-items: center;
-    justify-content: space-between;
+    gap: 85px;
     margin-top: 40px;
-    
 }
 
 .footer-container ul li {
@@ -28,8 +28,8 @@
 }
 
 .social-icons {
-    width: 1.4em;
-    height: 1.4em;
+    width: 1.1em;
+    height: 1.1em;
     cursor: pointer;
 }
 
@@ -50,5 +50,8 @@
 }
 
 .footer-container div {
-    color: rgba(0, 0, 0, 0.447);
+    color: rgba(0, 0, 0, 0.389);
+    font-family: 'Arial-Rounded';
+    margin-top: 10px;
+    font-size: 0.9rem;
 }

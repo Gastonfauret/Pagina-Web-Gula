@@ -1,15 +1,3 @@
-body {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-}
-
-@font-face {
-    font-family: 'Arial-Rounded';
-    src: url('../font/unicode.arialr.ttf');
-}
-
-
 .form-container {
     display: flex;
     flex-direction: column;

@@ -1,6 +1,7 @@
 .sign-off-container {
     margin-top: 40px;
-    width: 90em;
+    margin-bottom: 30px;
+    width: 98vw;
     display: flex;
     justify-content: center;
 }

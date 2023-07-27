@@ -1,159 +1,158 @@
-@font-face {
-    font-family: 'Arial-Rounded';
-    src: url('../font/unicode.arialr.ttf');
+.add-button-container {
+  display: flex;
+  justify-content: center;
+  width: 98vw;
 }
 
 .data-clients-container {
-    width: 90em;
-    height: 30em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 17px;
-    font-family: 'Arial-Rounded'
+  width: 85vw;
+  height: 30em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 17px;
 }
 
 .data-clients-container thead tr th {
-    color: var(--gula-red);
-    border-bottom: 3px solid rgba(237, 28, 35, 0.166);
-    padding-bottom: 3.5px;
-    font-size: 1.15rem;
-    letter-spacing: 1.5px;
-    margin-bottom: 12px;
-    font-family: 'Arial-Rounded'
+  color: var(--gula-red);
+  border-bottom: 3px solid rgba(237, 28, 35, 0.166);
+  padding-bottom: 6px;
+  margin-bottom: 12px;
+}
+
+.data-clients-container thead {
+  display: flex;
 }
 
 .data-clients-container tbody,
 .data-clients-container thead {
-    width: 70em;
+  width: 85vw;
 }
 
-.data-clients-container tbody{
-    gap: 10px;
-    display: flex;
-    flex-direction: column;
-    overflow-y: scroll;
+.data-clients-container tbody {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
 }
 
 .data-clients-container tbody tr {
-    display: flex;
-    padding-bottom: 1px;
-    align-items: center;
+  display: flex;
+  padding-bottom: 1px;
+  align-items: center;
 }
 
 .data-clients-container thead tr {
-    display: flex;
+  display: flex;
+  width: 76vw;
 }
-
 
 .data-clients-container thead tr th,
 .data-clients-container tbody tr td {
-    width: 80px;    
-    display: flex;
+  display: flex;
+  width: 80px;
+  font-size: 0.8rem;
 }
 
 .data-clients-container thead tr th:nth-child(2),
 .data-clients-container tbody tr td:nth-child(2) {
-    padding-left: 60px;
+  padding-left: 60px;
 }
 
 .data-clients-container thead tr th:nth-child(3),
 .data-clients-container tbody tr td:nth-child(3) {
-    padding-left: 78px;
-    width: 150px;
+  padding-left: 78px;
+  width: 150px;
 }
 
 .data-clients-container thead tr th:nth-child(4),
 .data-clients-container tbody tr td:nth-child(4) {
-    padding-left: 10px;
-    width: 100px;
+  padding-left: 10px;
+  width: 100px;
 }
 
 .data-clients-container thead tr th:nth-child(5),
 .data-clients-container tbody tr td:nth-child(5) {
-    padding-left: 115px;
-    width: 150px;
+  padding-left: 115px;
+  width: 150px;
 }
 
 .data-clients-container thead tr th:nth-child(6),
 .data-clients-container tbody tr td:nth-child(6) {
-    width: 178px;
-    display: flex;
-    justify-content: end;
+  width: 178px;
+  display: flex;
+  justify-content: end;
 }
 
 .data-clients-container tbody tr td:nth-child(7) {
-    padding-left: 55px;
-    width: 20px;
-    height: 20px;
+  padding-left: 55px;
+  width: 20px;
+  height: 20px;
 }
 
 .data-clients-container tbody tr td:nth-child(8) {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
 
 .user-icons {
-    width: 20px;
-    height: 20px;
-    color: var(--gula-red);
-    cursor: pointer;
+  width: 17px;
+  height: 17px;
+  color: var(--gula-red);
+  cursor: pointer;
 }
 
 .request-error-container {
-    width: 100%;
+  width: 100%;
 }
 
 .fix-img-error {
-    margin-top: -60px;
-    width: 70em;
+  margin-top: -60px;
+  width: 85vw;
 }
 
 .modal {
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .modal form {
-    display: flex;
-    flex-direction: column;
-    width: 400px;
-    height: 500px;
-    padding: 20px 30px 20px 30px;
-    justify-content: space-between;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 500px;
+  padding: 20px 30px 20px 30px;
+  justify-content: space-between;
+  gap: 10px;
 }
 
 .modal-button__container {
-    display: flex;
-    flex-direction: column;
-    height: 60px;
-    justify-content: center;
-    margin-top: 10px;
-    
+  display: flex;
+  flex-direction: column;
+  height: 60px;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 .modal form label {
-    font-size: 0.8rem;
-    color: var(--gula-red);
-    font-weight: bold;
-    letter-spacing: 1.5px;
-    margin-bottom: -10px;
-    font-family: 'Arial-Rounded';
-    display: flex;
+  font-size: 0.8rem;
+  color: var(--gula-red);
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  margin-bottom: -10px;
+  display: flex;
 }
 
 .modal form input {
-    padding: 5px;
+  padding: 5px;
 }
 
 .modal-button__container input {
-    height: 80%;
-    background-color: var(--gula-red);
-    border: none;
-    color: white;
-    font-size: 1.1rem;
-    font-family: 'Arial-Rounded';
+  height: 80%;
+  background-color: var(--gula-red);
+  border: none;
+  color: white;
+  font-size: 1.1rem;
 }

@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'Arial-Rounded';
+  src: url('../font/unicode.arialr.ttf');
+}
+
+* {
+  font-family: 'Arial-Rounded';
+}
+
+body {
+  background-color: white;
+  overflow-x: hidden;
+}
+
 /* width */
 ::-webkit-scrollbar {
    width: 10px;

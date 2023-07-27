@@ -2,12 +2,6 @@ img {
     width: 10em;
 }
 
-@font-face {
-    font-family: 'Arial-Rounded';
-    src: url('../font/unicode.arialr.ttf');
-}
-
-
 .message,
 .slogan {
     font-family: 'Arial-Rounded';

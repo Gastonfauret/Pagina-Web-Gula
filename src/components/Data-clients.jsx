@@ -108,7 +108,7 @@ function DataClients() {
 
   return (
     <>
-    {/* Tabla donde se van a renderizar los datos obtenidos con el metodo GET */}
+      {/* Tabla donde se van a renderizar los datos obtenidos con el metodo GET */}
       <div className="add-button-container">
         <table className="data-clients-container">
           <thead>
@@ -120,6 +120,7 @@ function DataClients() {
               <th>Fecha de nac.</th>
               <th>Telefono</th>
             </tr>
+            <Modd />
           </thead>
           <tbody>
             {users.map((user) => (
@@ -218,7 +219,6 @@ function DataClients() {
         </Dialog>
 
         {/* Boton para agregar usuarios (abre modal) */}
-        <Modd />
       </div>
     </>
   );
