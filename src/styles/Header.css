@@ -1,26 +1,25 @@
 .header-container {
     width: 98vw;
-    height: 6em;
+    height: 17vh;
     background-color: var(--gula-red);
     border-radius: 3px;
     display: flex;
     position: relative;
     align-items: center;
     justify-content: space-between;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .header-container img {
-    width: 5.5em;
+    width: 8vw;
     margin-left: 2.5em;
     cursor: pointer;
 }
 
 .header-container .user-profile {
     border-radius: 50%;
-    width: 3.6em;
+    width: 5vw;
     cursor: pointer;
+    border: 3px solid white;
 }
 
 .user-container {
@@ -34,7 +33,7 @@
 
 .user {
     font-family: 'Arial-Rounded';
-    font-size: 0.8rem;
+    font-size: 1vw;
     color: white;
     font-weight: bolder;
     cursor: pointer;
@@ -52,7 +51,7 @@ a {
     text-decoration: none;
     font-family: 'Arial-Rounded';
     color: white;
-    font-size: 0.79rem;
+    font-size: 1vw;
     font-weight: 600;
     padding-bottom: 5px;
 }

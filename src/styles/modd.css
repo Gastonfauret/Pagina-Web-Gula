@@ -1,13 +1,15 @@
+.add-button__container {
+    height: 5vh;
+}
+
 .add-button {
     color: var(--gula-red);
-    width: 35px;
-    height: 35px;
-    margin-top: 17px;
+    width: 6vw;
+    height: 6vh;
     cursor: pointer;
     transition: transform 1s;
-    position: absolute;
-    right: 95px;
-    top: 155px;
+    margin-left: 8%;
+    margin-top: -10%;
 }
 
 .add-button:hover {

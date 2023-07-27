@@ -1,14 +1,14 @@
 .sign-off-container {
     margin-top: 40px;
     margin-bottom: 30px;
-    width: 98vw;
+    width: 100vw;
     display: flex;
     justify-content: center;
 }
 
 .sign-off-button {
-    width: 8em;
-    height: 3em;
+    width: 9vw;
+    height: 8vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,4 +16,5 @@
     color: white;
     background: var(--gula-red);
     cursor: pointer;
+    font-size: 1vw;
 }

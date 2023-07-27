@@ -1,10 +1,10 @@
 .footer-container {
-    width: 98vw;
+    width: 100vw;
     display: flex;
     align-items: center;
     flex-direction: column;
-    border-radius: 3px;
-    height: 10em;
+    justify-content: center;
+    height: 30vh;
     margin-bottom: 20px; 
     margin-top: 20px;
     background-color: rgba(128, 128, 128, 0.206);
@@ -15,21 +15,21 @@
 .footer-container ul {
     list-style: none;
     display: flex;
-    width: 10.5em;
+    width: 18vw;
     height: 2em;
     align-items: center;
-    gap: 85px;
+    justify-content: space-between;
     margin-top: 40px;
+    padding: 0;
 }
 
 .footer-container ul li {
-    margin-left: -40px;
     color: black;
 }
 
 .social-icons {
-    width: 1.1em;
-    height: 1.1em;
+    width: 1.5vw;
+    height: 1.5vw;
     cursor: pointer;
 }
 
@@ -53,5 +53,5 @@
     color: rgba(0, 0, 0, 0.389);
     font-family: 'Arial-Rounded';
     margin-top: 10px;
-    font-size: 0.9rem;
+    font-size: 1.1vw;
 }

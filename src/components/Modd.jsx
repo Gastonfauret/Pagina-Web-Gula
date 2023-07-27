@@ -16,11 +16,13 @@ function Modd() {
 
   return (
     <>
-      <AiFillPlusCircle className="add-button" onClick={handleOpen} />
-      <Dialog open={open} onClose={handleClose} className="modal">
-        {switchState && <ClientsForm />}
-        {!switchState && <ProvForm />}
-      </Dialog>
+      <div className="add-button__container">
+        <AiFillPlusCircle className="add-button" onClick={handleOpen} />
+        <Dialog open={open} onClose={handleClose} className="modal">
+          {switchState && <ClientsForm />}
+          {!switchState && <ProvForm />}
+        </Dialog>
+      </div>
     </>
   );
 }
