@@ -37,13 +37,12 @@
     color: white;
     font-weight: bolder;
     cursor: pointer;
-    margin-right: -20px;
 }
 
 .nav-pages {
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 3vw;
     list-style: none;
 }
 
@@ -53,7 +52,7 @@ a {
     color: white;
     font-size: 1vw;
     font-weight: 600;
-    padding-bottom: 5px;
+    padding-bottom: 2vw;
 }
 
 a:hover {

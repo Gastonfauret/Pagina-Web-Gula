@@ -5,21 +5,30 @@ body {
     text-align: center;    
 }
 
+.aboutus-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
 .branch {
     font-family: 'Arial-Rounded';
-    font-size: 3em;
+    font-size: 3vw;
     color: var(--gula-red);
 }
 
 .branch-text {
     font-family: 'Arial-Rounded';
-    font-size: 1.3em;
-    line-height: 2em;
+    font-size: 1.4vw;
+    line-height: 2.5vw;
     text-align: center;
     margin-top: 0em;
 }
+.red-logo__container {
+    width: 100vw;
+}
 
 .red-logo {
-    width: 10em;
+    width: 10vw;
     margin-top: 1em;
 }

@@ -101,6 +101,7 @@ function DataProv() {
               <th>Telefono</th>
               <th>Rubro</th>
             </tr>
+            <Modd />
           </thead>
           <tbody>
             {providers.map((provider) => (
@@ -208,7 +209,7 @@ function DataProv() {
             </div>
           </form>
         </Dialog>
-        <Modd />
+
       </div>
     </>
   );

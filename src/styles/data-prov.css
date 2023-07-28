@@ -1,81 +1,96 @@
 .data-prov-container {
-    width: 100vw;
-    height: 30em;
+    width: 85vw;
+    height: 65vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 17px;
-    font-family: 'Arial-Rounded';
+}
+
+.data-prov-container thead {
+    display: flex;
 }
 
 .data-prov-container thead,
 .data-prov-container tbody {
-    width: 85vw;    
+    width: 80vw;
 }
 
 .data-prov-container thead tr th {
     color: var(--gula-red);
     border-bottom: 3px solid rgba(237, 28, 35, 0.166);
-    padding-bottom: 3.5px;
-    font-size: 1.15rem;
-    letter-spacing: 1.5px;
-    margin-bottom: 12px;
+    margin-bottom: 1%;
+    padding-bottom: 1%;
 }
 
 .data-prov-container tbody {
+    gap: 1.5vh;
     display: flex;
     flex-direction: column;
-    gap: 10px;    
     overflow-y: scroll;
 }
 
-.data-prov-container thead tr,
+.data-prov-container thead tr {
+    display: flex;
+    width: 71.3vw;
+    display: flex; 
+    margin-right: 2.5vw;
+}
+
 .data-prov-container tbody tr {
     display: flex;
-    
+    padding-bottom: 1px;
+    align-items: center;
 }
 
 .data-prov-container thead tr th,
 .data-prov-container tbody tr td {
     display: flex;
+    width: 8vw;
+    font-size: 1vw;
+    justify-content: start;
 }
 
 .data-prov-container thead tr th:nth-child(1),
 .data-prov-container tbody tr td:nth-child(1) {
-    width: 210px;
+    min-width: 25ch;
 }
+
 .data-prov-container thead tr th:nth-child(2),
 .data-prov-container tbody tr td:nth-child(2) {
-    width: 160px;
-    padding-left: 15px;
+    min-width: 20ch;
 }
 .data-prov-container thead tr th:nth-child(3),
 .data-prov-container tbody tr td:nth-child(3) {
-    width: 80px;
-    padding-left: 30px;
+    min-width: 10ch;
 }
 .data-prov-container thead tr th:nth-child(4),
 .data-prov-container tbody tr td:nth-child(4) {
-    width: 90px;
+    min-width: 22ch;
 }
 .data-prov-container thead tr th:nth-child(5),
 .data-prov-container tbody tr td:nth-child(5) {
-    width: 90px;
+    min-width: 15ch;
 }
 .data-prov-container thead tr th:nth-child(6),
 .data-prov-container tbody tr td:nth-child(6) {
-    width: 160px;
-    padding-left: 70px;
+    min-width: 20ch;
 }
 .data-prov-container thead tr th:nth-child(7),
 .data-prov-container tbody tr td:nth-child(7) {
-    width: 90px;
+    min-width: 10ch;
+    display: flex;
     justify-content: end;
-    padding-left: 5px;
 }
 
 .data-prov-container tbody tr td:nth-child(8) {
-    margin-left: 53px;
+    margin-left: 5%;
+    width: 1.5vw;
+}
+
+.data-prov-container tbody tr td:nth-child(9) {
+    width: 1.5vw;
+    margin-left: -0.2vw;
 }
 
 .add-button {
